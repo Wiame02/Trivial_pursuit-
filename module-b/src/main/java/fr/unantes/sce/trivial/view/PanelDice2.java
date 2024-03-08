@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.net.URL;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -99,7 +100,7 @@ public class PanelDice2 extends JPanel{
 		
 		if(jlLancerDeDes==null)
 		{
-			String imgChemin = "Pictures/des"+getDes()+".jpg";
+			URL imgChemin = this.getClass().getClassLoader().getResource("./pictures/des"+getDes()+".jpg");
 			ImageIcon img = new ImageIcon(imgChemin);
 			jlLancerDeDes = new JLabel(img);
 		}

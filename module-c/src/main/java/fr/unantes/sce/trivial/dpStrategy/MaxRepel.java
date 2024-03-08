@@ -39,8 +39,8 @@ public class MaxRepel implements CardEffect {
 		
 		//Changer les valeurs de la catégorie, du badge, du sprite adverse, de la question et de la réponse
 		fgp.getLblCategoryName().setText(questionFight.getCategory().toString());
-		fgp.getIvBadge().setImage(new Image("/ressources/images/badges/badge" + indexOf + ".png"));
-		fgp.getEnemySprite().setImage(new Image("ressources/images/enemySprites/" + questionFight.getCategory().toString() + ".gif"));
+		fgp.getIvBadge().setImage(new Image(getClass().getClassLoader().getResource("./images/badges/badge" + indexOf + ".png").toString()));
+		fgp.getEnemySprite().setImage(new Image(getClass().getClassLoader().getResource("./images/enemySprites/" + questionFight.getCategory().toString() + ".gif").toString()));
 		fgp.getLblAnswer().setText("Correct : " + questionFight.getAnswer());
 		fgp.getLblQuestion().setText(questionFight.getStatement());
 		fgp.getTxtAnswer().setText("");

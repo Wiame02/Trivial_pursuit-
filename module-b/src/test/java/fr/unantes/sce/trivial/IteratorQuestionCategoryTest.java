@@ -8,9 +8,9 @@ import fr.unantes.sce.trivial.model.IteratorQuestion;
 import fr.unantes.sce.trivial.model.IteratorQuestionCategory;
 import fr.unantes.sce.trivial.model.Question;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class IteratorQuestionCategoryTest
 {
@@ -18,7 +18,7 @@ public class IteratorQuestionCategoryTest
 	private List<Question> list;
 	
 	
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception 
 	{
 		List<Question> listQ = new ArrayList<Question>();
@@ -46,7 +46,7 @@ public class IteratorQuestionCategoryTest
 		list=(List<Question>)Explorateur.getField(it,"list");
 	}
 
-	@After
+	@AfterEach
 	public void tearDown() throws Exception 
 	{
 		it = null;

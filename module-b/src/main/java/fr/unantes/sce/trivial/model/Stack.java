@@ -31,7 +31,7 @@ public class Stack extends Observable implements Serializable
 	public static Stack getInstance()
 	{
 		if (instance == null) 
-				instance = Serialisation.retrieveStack("Data/question.json");
+				instance = Serialisation.retrieveStack(Stack.class.getClassLoader().getResourceAsStream("data/question.json"));
 		return instance;
 	}
 	

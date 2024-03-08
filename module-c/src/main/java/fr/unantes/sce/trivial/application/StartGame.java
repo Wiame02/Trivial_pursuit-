@@ -8,6 +8,8 @@ import javafx.scene.image.Image;
 import javafx.scene.input.KeyCombination;
 import javafx.scene.text.Font;
 
+import java.net.URL;
+
 public class StartGame extends Application {	
 	private static Stage stage;
 	public void start(Stage primaryStage) {
@@ -30,10 +32,11 @@ public class StartGame extends Application {
 			stage.setFullScreenExitHint(null);
 		    stage.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);
 			stage.setTitle("Trivialmon");
-			stage.getIcons().add(new Image("ressources/images/gameIcon/gameIcon.png"));
+			URL url = getClass().getClassLoader().getResource("./images/gameIcon/gameIcon.png");
+			stage.getIcons().add(new Image(url.toString()));
 			stage.show();
 			
-			Font customFont = Font.loadFont(getClass().getResourceAsStream("file:ressources/fonts/PressStart2P-Regular.ttf"), 4);
+			Font customFont = Font.loadFont(getClass().getClassLoader().getResourceAsStream(".fonts/PressStart2P-Regular.ttf"), 4);
 		} 
 		catch(Exception e) {
 			e.printStackTrace();

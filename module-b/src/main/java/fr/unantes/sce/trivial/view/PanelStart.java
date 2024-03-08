@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.geom.*;
+import java.net.URL;
 
 import javax.swing.*;
 
@@ -36,8 +37,9 @@ public class PanelStart extends JPanel
     
     	JPanel container = new JPanel();
     	container.setBackground(Color.WHITE);
-    	
-    	JLabel jlImg = new JLabel(new ImageIcon("Pictures/logo.jpg"));
+
+        URL url = this.getClass().getClassLoader().getResource("./pictures/logo.jpg");
+        JLabel jlImg = new JLabel(new ImageIcon(url));
     	
     	// creation de notre panel contenant nos boutons
         this.d = d;
@@ -54,9 +56,6 @@ public class PanelStart extends JPanel
         
         this.add(jlImg, BorderLayout.NORTH);
         this.add(container,BorderLayout.CENTER);
-        
-        
-        
     }
     
     @Override 
@@ -216,8 +215,8 @@ class CompoundButton extends JButton
     
     /** 
      * This class allows to create the main buttons group
-     * @param the dimension of a button
-     * @param the button location in the panel
+     * @param d the dimension of a button
+     * @param bl the button location in the panel
      */
     public CompoundButton(Dimension d, final ButtonLocation bl) 
     {

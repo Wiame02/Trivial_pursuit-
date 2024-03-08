@@ -35,7 +35,7 @@ public class ManageUsers extends Observable implements Serializable
 	public static ManageUsers getInstance()
 	{
 		if(instance == null)
-			instance = Serialisation.retrieveManageUsers(new File("Data/sauve.xml"));
+			instance = Serialisation.retrieveManageUsers(ManageUsers.class.getClassLoader().getResourceAsStream("data/sauve.xml"));
 		return instance;
 	}
 	

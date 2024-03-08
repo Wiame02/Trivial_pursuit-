@@ -31,7 +31,7 @@ public class CreatePlayerGP extends GridPane {
 	private HBox hbSprite1, hbSprite2, hbSprite3, hbSprite4; 
 	
 	public CreatePlayerGP() {
-		this.getStylesheets().add("/ressources/css/createplayer.css");
+		this.getStylesheets().add("./css/createplayer.css");
 		//Affichage du grillage
 		fr.unantes.sce.trivial.vue.MainMenuGP.createLine(this, false);
 		
@@ -59,11 +59,11 @@ public class CreatePlayerGP extends GridPane {
 			int indexOf = listSprite.indexOf(sprite);
 			
 			sprite.setOnMouseEntered(event -> {
-				((ImageView) sprite.getChildren().get(0)).setImage(new Image("ressources/images/sprites/" + listCombo.get(indexOf).getSelectionModel().getSelectedItem() + ".gif"));
+				((ImageView) sprite.getChildren().get(0)).setImage(new Image(getClass().getClassLoader().getResource("./images/sprites/" + listCombo.get(indexOf).getSelectionModel().getSelectedItem() + ".gif").toString()));
 			});
 			
 			sprite.setOnMouseExited(event -> {
-				((ImageView) sprite.getChildren().get(0)).setImage(new Image("ressources/images/sprites/" + listCombo.get(indexOf).getSelectionModel().getSelectedItem() + "_Face.gif"));
+				((ImageView) sprite.getChildren().get(0)).setImage(new Image(getClass().getClassLoader().getResource("./images/sprites/" + listCombo.get(indexOf).getSelectionModel().getSelectedItem() + "_Face.gif").toString()));
 			});
 		}
 		
@@ -130,8 +130,8 @@ public class CreatePlayerGP extends GridPane {
 			for (Pawn pawn : Pawn.values()) {cIcon1.getItems().addAll(pawn.getNom());}
 			cIcon1.setValue(cIcon1.getItems().get(0));
 			cIcon1.setOnHiding(event -> {
-				getIvImage1().setImage(new Image("ressources/images/icons/" + cIcon1.getSelectionModel().getSelectedItem() + ".png"));
-				((ImageView) getHbSprite1().getChildren().get(0)).setImage(new Image("ressources/images/sprites/" + cIcon1.getSelectionModel().getSelectedItem() + "_Face.gif"));})
+				getIvImage1().setImage(new Image(getClass().getClassLoader().getResource("./images/icons/" + cIcon1.getSelectionModel().getSelectedItem() + ".png").toString()));
+				((ImageView) getHbSprite1().getChildren().get(0)).setImage(new Image(getClass().getClassLoader().getResource("./images/sprites/" + cIcon1.getSelectionModel().getSelectedItem() + "_Face.gif").toString()));})
 			;}
 		return cIcon1;
 	}
@@ -142,8 +142,8 @@ public class CreatePlayerGP extends GridPane {
 			for (Pawn pawn : Pawn.values()) {cIcon2.getItems().addAll(pawn.getNom());}
 			cIcon2.setValue(cIcon1.getItems().get(0));
 			cIcon2.setOnHiding(event -> {
-				getIvImage2().setImage(new Image("ressources/images/icons/" + cIcon2.getSelectionModel().getSelectedItem() + ".png"));
-				((ImageView) getHbSprite2().getChildren().get(0)).setImage(new Image("ressources/images/sprites/" + cIcon2.getSelectionModel().getSelectedItem() + "_Face.gif"));
+				getIvImage2().setImage(new Image(getClass().getClassLoader().getResource("./images/icons/" + cIcon2.getSelectionModel().getSelectedItem() + ".png").toString()));
+				((ImageView) getHbSprite2().getChildren().get(0)).setImage(new Image(getClass().getClassLoader().getResource("./images/sprites/" + cIcon2.getSelectionModel().getSelectedItem() + "_Face.gif").toString()));
 			});
 		}
 		return cIcon2;
@@ -155,8 +155,8 @@ public class CreatePlayerGP extends GridPane {
 			for (Pawn pawn : Pawn.values()) {cIcon3.getItems().addAll(pawn.getNom());}
 			cIcon3.setValue(cIcon1.getItems().get(0));
 			cIcon3.setOnHiding(event -> {
-				getIvImage3().setImage(new Image("ressources/images/icons/" + cIcon3.getSelectionModel().getSelectedItem() + ".png"));
-				((ImageView) getHbSprite3().getChildren().get(0)).setImage(new Image("ressources/images/sprites/" + cIcon3.getSelectionModel().getSelectedItem() + "_Face.gif"));
+				getIvImage3().setImage(new Image(getClass().getClassLoader().getResource("./images/icons/" + cIcon3.getSelectionModel().getSelectedItem() + ".png").toString()));
+				((ImageView) getHbSprite3().getChildren().get(0)).setImage(new Image(getClass().getClassLoader().getResource("./images/sprites/" + cIcon3.getSelectionModel().getSelectedItem() + "_Face.gif").toString()));
 			});
 		}
 		return cIcon3;
@@ -168,8 +168,8 @@ public class CreatePlayerGP extends GridPane {
 			for (Pawn pawn : Pawn.values()) {cIcon4.getItems().addAll(pawn.getNom());}
 			cIcon4.setValue(cIcon1.getItems().get(0));
 			cIcon4.setOnHiding(event -> {
-				getIvImage4().setImage(new Image("ressources/images/icons/" + cIcon4.getSelectionModel().getSelectedItem() + ".png"));
-				((ImageView) getHbSprite4().getChildren().get(0)).setImage(new Image("ressources/images/sprites/" + cIcon4.getSelectionModel().getSelectedItem() + "_Face.gif"));
+				getIvImage4().setImage(new Image(getClass().getClassLoader().getResource("./images/icons/" + cIcon4.getSelectionModel().getSelectedItem() + ".png").toString()));
+				((ImageView) getHbSprite4().getChildren().get(0)).setImage(new Image(getClass().getClassLoader().getResource("./images/sprites/" + cIcon4.getSelectionModel().getSelectedItem() + "_Face.gif").toString()));
 			});
 		}
 		return cIcon4;
@@ -310,25 +310,25 @@ public class CreatePlayerGP extends GridPane {
 	}
 	//ImageView
 	public ImageView getIvImage1() {
-		if(ivImage1 == null) {ivImage1 = new ImageView(new Image("ressources/images/icons/Bulbasaur.png")); ivImage1.setFitWidth(50); ivImage1.setFitHeight(50);}
+		if(ivImage1 == null) {ivImage1 = new ImageView(new Image(getClass().getClassLoader().getResource("./images/icons/Bulbasaur.png").toString())); ivImage1.setFitWidth(50); ivImage1.setFitHeight(50);}
 		return ivImage1;
 	}
 	public ImageView getIvImage2() {
-		if(ivImage2 == null) {ivImage2 = new ImageView(new Image("ressources/images/icons/Bulbasaur.png")); ivImage2.setFitWidth(50); ivImage2.setFitHeight(50);}
+		if(ivImage2 == null) {ivImage2 = new ImageView(new Image(getClass().getClassLoader().getResource("./images/icons/Bulbasaur.png").toString())); ivImage2.setFitWidth(50); ivImage2.setFitHeight(50);}
 		return ivImage2;
 	}
 	public ImageView getIvImage3() {
-		if(ivImage3 == null) {ivImage3 = new ImageView(new Image("ressources/images/icons/Bulbasaur.png")); ivImage3.setFitWidth(50); ivImage3.setFitHeight(50);}
+		if(ivImage3 == null) {ivImage3 = new ImageView(new Image(getClass().getClassLoader().getResource("./images/icons/Bulbasaur.png").toString())); ivImage3.setFitWidth(50); ivImage3.setFitHeight(50);}
 		return ivImage3;
 	}
 	public ImageView getIvImage4() {
-		if(ivImage4 == null) {ivImage4 = new ImageView(new Image("ressources/images/icons/Bulbasaur.png")); ivImage4.setFitWidth(50); ivImage4.setFitHeight(50);}
+		if(ivImage4 == null) {ivImage4 = new ImageView(new Image(getClass().getClassLoader().getResource("./images/icons/Bulbasaur.png").toString())); ivImage4.setFitWidth(50); ivImage4.setFitHeight(50);}
 		return ivImage4;
 	}
 	public HBox getHbSprite1() {
 		if(hbSprite1 == null) {
 			hbSprite1 = new HBox();
-			ImageView ivSprite1 = new ImageView(new Image("ressources/images/sprites/Bulbasaur.gif"));
+			ImageView ivSprite1 = new ImageView(new Image(getClass().getClassLoader().getResource("./images/sprites/Bulbasaur.gif").toString()));
 			ivSprite1.setFitWidth(100);
 			ivSprite1.setFitHeight(100);
 			hbSprite1.getChildren().add(ivSprite1);
@@ -338,7 +338,7 @@ public class CreatePlayerGP extends GridPane {
 	public HBox getHbSprite2() {
 		if(hbSprite2 == null) {
 			hbSprite2 = new HBox();
-			ImageView ivSprite2 = new ImageView(new Image("ressources/images/sprites/Bulbasaur.gif"));
+			ImageView ivSprite2 = new ImageView(new Image(getClass().getClassLoader().getResource("./images/sprites/Bulbasaur.gif").toString()));
 			ivSprite2.setFitWidth(100);
 			ivSprite2.setFitHeight(100);
 			hbSprite2.getChildren().add(ivSprite2);
@@ -348,7 +348,7 @@ public class CreatePlayerGP extends GridPane {
 	public HBox getHbSprite3() {
 		if(hbSprite3 == null) {
 			hbSprite3 = new HBox();
-			ImageView ivSprite3 = new ImageView(new Image("ressources/images/sprites/Bulbasaur.gif"));
+			ImageView ivSprite3 = new ImageView(new Image(getClass().getClassLoader().getResource("./images/sprites/Bulbasaur.gif").toString()));
 			ivSprite3.setFitWidth(100);
 			ivSprite3.setFitHeight(100);
 			hbSprite3.getChildren().add(ivSprite3);
@@ -358,7 +358,7 @@ public class CreatePlayerGP extends GridPane {
 	public HBox getHbSprite4() {
 		if(hbSprite4 == null) {
 			hbSprite4 = new HBox();
-			ImageView ivSprite4 = new ImageView(new Image("ressources/images/sprites/Bulbasaur.gif"));
+			ImageView ivSprite4 = new ImageView(new Image(getClass().getClassLoader().getResource("./images/sprites/Bulbasaur.gif").toString()));
 			ivSprite4.setFitWidth(100);
 			ivSprite4.setFitHeight(100);
 			hbSprite4.getChildren().add(ivSprite4);
@@ -501,8 +501,8 @@ public class CreatePlayerGP extends GridPane {
 			button.setFocusTraversable(false);
 			listButtonProfil.get(listButtonGuest.indexOf(button)).setId("");
 			listButtonProfil.get(listButtonGuest.indexOf(button)).setFocusTraversable(false);
-			listImage.get(listButtonGuest.indexOf(button)).setImage(new Image("ressources/images/icons/Bulbasaur.png"));
-			((ImageView) listSprite.get(listButtonGuest.indexOf(button)).getChildren().get(0)).setImage(new Image("ressources/images/sprites/Bulbasaur_Face.gif"));
+			listImage.get(listButtonGuest.indexOf(button)).setImage(new Image(getClass().getClassLoader().getResource("./images/icons/Bulbasaur.png").toString()));
+			((ImageView) listSprite.get(listButtonGuest.indexOf(button)).getChildren().get(0)).setImage(new Image(getClass().getClassLoader().getResource("./images/sprites/Bulbasaur_Face.gif").toString()));
 			listCombo.get(listButtonGuest.indexOf(button)).setValue(listCombo.get(listButtonGuest.indexOf(button)).getItems().get(0));
 		}
 	}    
@@ -528,8 +528,8 @@ public class CreatePlayerGP extends GridPane {
 			        } 
 			        else {
 			        	int indexof = listImage.indexOf(image);
-			        	image.setImage(new Image("ressources/images/icons/" + cell.getItem() + ".png"));
-			        	((ImageView) listSprite.get(indexof).getChildren().get(0)).setImage(new Image("ressources/images/sprites/" + cell.getItem() + "_Face.gif"));
+			        	image.setImage(new Image(getClass().getClassLoader().getResourceAsStream("./images/icons/" + cell.getItem() + ".png")));
+			        	((ImageView) listSprite.get(indexof).getChildren().get(0)).setImage(new Image(getClass().getClassLoader().getResource("./images/sprites/" + cell.getItem() + "_Face.gif").toString()));
 			        }
 			    });
 			    return cell ;

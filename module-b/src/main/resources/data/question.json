@@ -126,7 +126,7 @@
 		"statement":"Which football club won the most often the football cup og Belgium?",
 		"category":"SPORT_LEISURE",
 		"choices":{
-			"Standard Liège":false,
+			"Standard LiÃ¨ge":false,
 			"RSC Anderlecht":false,
 			"Club Brugge":true,
 			"KRC Genk":false
@@ -181,10 +181,10 @@
 		"statement":"What is the lowest possible temperature?",
 		"category":"SCIENCE_NATURE",
 		"choices":{
-			"-173,15°C":false,
-			"-273,15°C":true,
-			"-373,15°C":false,
-			"-473,15°C":false
+			"-173,15Â°C":false,
+			"-273,15Â°C":true,
+			"-373,15Â°C":false,
+			"-473,15Â°C":false
 		}
 	},
 	{
@@ -200,7 +200,7 @@
 	},
 	{
 		"author":"Rochez Adrien",
-		"statement":"What\u0027s the name of the river in london ?",
+		"statement":"What\u0027s the name of the river in londonÂ ?",
 		"category":"GEOGRAPHY","choices":{
 			"River plate":false,
 			"River Thames":true,
@@ -210,7 +210,7 @@
 	},
 	{
 		"author":"Rochez Adrien",
-		"statement":"What\u0027s the capital of Belarus ?",
+		"statement":"What\u0027s the capital of BelarusÂ ?",
 		"category":"GEOGRAPHY",
 		"choices":{
 			"Kiev":false,
@@ -221,7 +221,7 @@
 	},
 	{
 		"author":"Rochez Adrien",
-		"statement":"How many states are there in usa ?",
+		"statement":"How many states are there in usaÂ ?",
 		"category":"GEOGRAPHY",
 		"choices":{
 			"50":true,
@@ -232,7 +232,7 @@
 	},
 	{
 		"author":"Rochez Adrien",
-		"statement":"Who is the main actor in the patriot ?",
+		"statement":"Who is the main actor in the patriotÂ ?",
 		"category":"ENTERTAINMENT",
 		"choices":{
 			"Russel Crowe":false,
@@ -243,7 +243,7 @@
 	},
 	{
 		"author":"Rochez Adrien",
-		"statement":"Who is the main actor in fight club ?",
+		"statement":"Who is the main actor in fight clubÂ ?",
 		"category":"ENTERTAINMENT",
 		"choices":{
 			"Russel Crowe":false,
@@ -254,7 +254,7 @@
 	},
 	{
 		"author":"Rochez Adrien",
-		"statement":"Who is the author of harry potter story ?",
+		"statement":"Who is the author of harry potter storyÂ ?",
 		"category":"ENTERTAINMENT",
 		"choices":{
 			"J.K.Rowlings":true,
@@ -265,18 +265,18 @@
 	},
 	{
 		"author":"Rochez Adrien",
-		"statement":"Who is the most successful sniper in history ?",
+		"statement":"Who is the most successful sniper in historyÂ ?",
 		"category":"HISTORY",
 		"choices":{
 			"King Kong":false,
-			"Simo Häyhä":true,
+			"Simo HÃ¤yhÃ¤":true,
 			"Vasily Zaytsev":false,
 			"Major Koenig":false
 		}
 	},
 	{
 		"author":"Rochez Adrien",
-		"statement":"What the biggest tank battle in history ?",
+		"statement":"What the biggest tank battle in historyÂ ?",
 		"category":"HISTORY",
 		"choices":{
 			"Leningrad":false,
@@ -287,7 +287,7 @@
 	},
 	{
 		"author":"Rochez Adrien",
-		"statement":"Who is the general in the afrika korps ? ",
+		"statement":"Who is the general in the afrika korpsÂ ?Â ",
 		"category":"HISTORY",
 		"choices":{
 			"Romel":true,
@@ -298,7 +298,7 @@
 	},
 	{
 		"author":"Rochez Adrien",
-		"statement":"Who is the ceo of microsoft ?  ",
+		"statement":"Who is the ceo of microsoftÂ ? Â ",
 		"category":"BUSINESS",
 		"choices":{"
 			Satya Nadella":true,
@@ -309,7 +309,7 @@
 	},
 	{
 		"author":"Rochez Adrien",
-		"statement":"Which company made the witcher series ?  ",
+		"statement":"Which company made the witcher seriesÂ ? Â ",
 		"category":"BUSINESS",
 		"choices":{
 			"Activision":false,
@@ -320,7 +320,7 @@
 	},
 	{
 		"author":"Rochez Adrien",
-		"statement":"Which company made the iphone ?  ",
+		"statement":"Which company made the iphoneÂ ? Â ",
 		"category":"BUSINESS",
 		"choices":{
 			"Apple":true,
@@ -353,7 +353,7 @@
 	},
 	{
 		"author":"Rochez Adrien",
-		"statement":"What vitamin is called the sunshine vitamin ?",
+		"statement":"What vitamin is called the sunshine vitaminÂ ?",
 		"category":"SCIENCE_NATURE",
 		"choices":{
 			"Vitamin A":false,
@@ -385,7 +385,7 @@
 	},
 	{
 		"author":"Rochez Adrien",
-		"statement":"Which country won the last world cup ?",
+		"statement":"Which country won the last world cupÂ ?",
 		"category":"SPORT_LEISURE",
 		"choices":{
 			"Brazil":false,
@@ -444,7 +444,7 @@
 		"category":"SCIENCE_NATURE",
 		"choices":{
 			"Thomas Edison":true,
-			"Auguste and Louis Lumière":false,
+			"Auguste and Louis LumiÃ¨re":false,
 			"Alexander Graham Bell":false,
 			"Albert Einstein":false
 		}
@@ -589,12 +589,12 @@
 			"Place Stanislas": true,
 			"Place Lamour": false,
 			"Place Victor": false,
-			"Place d’Alliance": false
+			"Place dÂ’Alliance": false
 		}
 	},
 	{
 		"author": "Donckers Leslie",
-		"statement": "What are the first names of the two Lumière brothers ?",
+		"statement": "What are the first names of the two LumiÃ¨re brothers ?",
 		"category": "ENTERTAINMENT",
 		"choices": {
 			"Charles and Louis": false,
@@ -660,12 +660,12 @@
 	},
 	{
 		"author": "Donckers Leslie",
-		"statement": "Which actor published his memoirs in two volumes entitled the Ragman’s son and Climbing The Mountain: my search for meaning? ",
+		"statement": "Which actor published his memoirs in two volumes entitled the RagmanÂ’s son and Climbing The Mountain: my search for meaning? ",
 		"category": "ENTERTAINMENT",
 		"choices": {
 			"Kirk Douglas": true,
 			"Jean Bode": false,
-			"Gace Brulé": false,
+			"Gace BrulÃ©": false,
 			"Thibaut de Champagne": false
 		}
 	},
@@ -682,7 +682,7 @@
 	},
 	{
 		"author": "Donckers Leslie",
-		"statement": "Considering two complementary goods A and B. An increase in the price of good A will result in…",
+		"statement": "Considering two complementary goods A and B. An increase in the price of good A will result inÂ…",
 		"category": "BUSINESS",
 		"choices": {
 		"An increase in the price of good B": false,
@@ -730,14 +730,14 @@
 		"category": "ENTERTAINMENT",
 		"choices": {
 		"The music of Jean-Jacques Goldman": true,
-		"The music of Michèle Bernard": false,
+		"The music of MichÃ¨le Bernard": false,
 		"The music of Pascal Obispo": false,
 		"The music of Yves Duteil": false
 		}
 	},
 	{
 		"author": "Donckers Leslie",
-		"statement": "How many times was François Mitterand a Minister  in France ?",
+		"statement": "How many times was FranÃ§ois Mitterand a Minister  in France ?",
 		"category": "HISTORY",
 		"choices": {
 		"3 times": false,
@@ -850,7 +850,7 @@
 		"statement": "Which river crosses Italy ?",
 		"category": "GEOGRAPHY",
 		"choices": {
-			"The Pô": true,
+			"The PÃ´": true,
 			"The Seine": false,
 			"The Nile": false,
 			"The Amazon": false
@@ -864,7 +864,7 @@
 			"Jean Girault": true,
 			"Luc Besson": false,
 			"Jean-Luc Godard": false,
-			"François Truffaut": false
+			"FranÃ§ois Truffaut": false
 		}
 	},
 	{
@@ -1715,7 +1715,7 @@
 		}
 	},
 	{
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "Which of these is the most populous countries:",
 	"category": "GEOGRAPHY",
 	"choices": {
@@ -1726,7 +1726,7 @@
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "In which country is the Transvaal located?",
 	"category": "GEOGRAPHY",
 	"choices": {
@@ -1737,7 +1737,7 @@
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "Which city was the homeland of Henry IV and the future Charles XIV of Sweden ?",
 	"category": "GEOGRAPHY",
 	"choices": {
@@ -1748,18 +1748,18 @@
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "Which aviator does Jean-Jacques Annaud foreground in The Wings of Courage ?",
 	"category": "ENTERTAINMENT",
 	"choices": {
-		"Guillaume Gelée": false,
-		"Henri Brêgi": false,
+		"Guillaume GelÃ©e": false,
+		"Henri BrÃªgi": false,
 		"NiceHenri Farman": false,
 		"Henri Guillaumet": true
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "Who was the third member of the trio with Rachid Taha and Khaled for rai  concert at Bercy \"1, 2, 3, soleil\" ?",
 	"category": "ENTERTAINMENT",
 	"choices": {
@@ -1770,18 +1770,18 @@
 	}
 },
 {
-	"author": "Delatte Mélanie",
-	"statement": "Which song by Maxime Le Forestier begins with \"C\u0027est une maison bleue adossée à la colline...\" ?",
+	"author": "Delatte MÃ©lanie",
+	"statement": "Which song by Maxime Le Forestier begins with \"C\u0027est une maison bleue adossÃ©e Ã  la colline...\" ?",
 	"category": "ENTERTAINMENT",
 	"choices": {
 		"Comme un arbre": false,
 		"San Fransisco": true,
-		"Mon frère": false,
-		"Attention au départ": false
+		"Mon frÃ¨re": false,
+		"Attention au dÃ©part": false
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "Which murder that was committed in the early morning Raymond Queneau to say that \"it was well worth it to get up so early?",
 	"category": "HISTORY",
 	"choices": {
@@ -1792,18 +1792,18 @@
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "Who was expelled from the Tiflis Spiritual Seminary at the age of 20 ?",
 	"category": "HISTORY",
 	"choices": {
 		"Joseph Stalin": true,
-		"Léon Trotsky": false,
+		"LÃ©on Trotsky": false,
 		"Vladimir llitch Lenin": false,
 		"Karl Marx": false
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "Which Roman god was the equivalent of the Greek Hermes ?",
 	"category": "HISTORY",
 	"choices": {
@@ -1814,7 +1814,7 @@
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "Which French scientist who died in 1794 is one of the inventors of modern Chemistry ?",
 	"category": "SCIENCE_NATURE",
 	"choices": {
@@ -1825,7 +1825,7 @@
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "which scientist published the revolutionary De Revolutionibus Orbium Coelestium in 1543 ?",
 	"category": "SCIENCE_NATURE",
 	"choices": {
@@ -1836,7 +1836,7 @@
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "What is the atomic number of Sulfur ?",
 	"category": "SCIENCE_NATURE",
 	"choices": {
@@ -1847,7 +1847,7 @@
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "How many holes does a golf course have?",
 	"category": "SPORT_LEISURE",
 	"choices": {
@@ -1858,7 +1858,7 @@
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "In what year was the first edition of L\u0027Equipe published ?",
 	"category": "SPORT_LEISURE",
 	"choices": {
@@ -1869,7 +1869,7 @@
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "What are the two major Milan Soccer Clubs?",
 	"category": "SPORT_LEISURE",
 	"choices": {
@@ -1880,7 +1880,7 @@
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "What is a Bond ?",
 	"category": "BUSINESS",
 	"choices": {
@@ -1891,7 +1891,7 @@
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "The part of the cost independant of the quantity produced is:",
 	"category": "BUSINESS",
 	"choices": {
@@ -1902,7 +1902,7 @@
 	}
 },
 {
-	"author": "Delatte Mélanie",
+	"author": "Delatte MÃ©lanie",
 	"statement": "What is the first company on the mobile Telephony market ?",
 	"category": "BUSINESS",
 	"choices": {
@@ -1969,7 +1969,7 @@
 },
 {
 	"author": "Florquin Deborah",
-	"statement": "Which movie starred Miou-Miou, Patrick Dewaere and Gérard Depardieu?",
+	"statement": "Which movie starred Miou-Miou, Patrick Dewaere and GÃ©rard Depardieu?",
 	"category": "ENTERTAINMENT",
 	"choices": {
 		"Les valseuses": true,
@@ -1980,10 +1980,10 @@
 },
 {
 	"author": "Florquin Deborah",
-	"statement": "What was the nickname of François Duvalier in Haiti ?",
+	"statement": "What was the nickname of FranÃ§ois Duvalier in Haiti ?",
 	"category": "HISTORY",
 	"choices": {
-		"Papa François": false,
+		"Papa FranÃ§ois": false,
 		"Papa Duvalier": false,
 		"Papa Papy": false,
 		"Papa Doc": true
@@ -2005,7 +2005,7 @@
 	"statement": "Of which nationalist organization dissolved in 1936 the Colonel de La Rocque was he the president ?",
 	"category": "HISTORY",
 	"choices": {
-		"Les Enfoirés": false,
+		"Les EnfoirÃ©s": false,
 		"La Croix de Feu": true,
 		"La Lutte contre le Sida": false,
 		"La Croix Rouge": false
@@ -2030,7 +2030,7 @@
 		"Les 12 coups de midi": false,
 		"On n\u0027est pas des pigeons": false,
 		"C\u0027est pas sorcier!": true,
-		"Clé sur porte": false
+		"ClÃ© sur porte": false
 	}
 },
 {
@@ -2159,10 +2159,10 @@
 	"statement": "What is the title of the film by Claude Zidi inspired by the adventures of Asterix ?",
 	"category": "ENTERTAINMENT",
 	"choices": {
-		"Astérix and the seven brothers": false,
-		"Astérix and the nine individuals": false,
-		"Astérix and Obelix: Operation Caesar salad": false,
-		"Astérix and Obelix against Caesar": true
+		"AstÃ©rix and the seven brothers": false,
+		"AstÃ©rix and the nine individuals": false,
+		"AstÃ©rix and Obelix: Operation Caesar salad": false,
+		"AstÃ©rix and Obelix against Caesar": true
 	}
 },
 {
@@ -2182,7 +2182,7 @@
 	"category": "HISTORY",
 	"choices": {
 		"Tutankharton": false,
-		"Rå": false,
+		"RÃ¥": false,
 		"Iznogoud": false,
 		"Tutankhamun": true
 	}
@@ -2204,7 +2204,7 @@
 	"category": "HISTORY",
 	"choices": {
 		"Philippe": false,
-		"René": true,
+		"RenÃ©": true,
 		"Martin": false,
 		"Jean": false
 	}
@@ -2442,7 +2442,7 @@
     },
     {
       "author": "Delforge",
-      "statement": "What sport did Pelé play ?",
+      "statement": "What sport did PelÃ© play ?",
 	  "category": "SPORT_LEISURE",
       "choices": {
         "Tennis": false,
@@ -2486,7 +2486,7 @@
     },
     {
       "author": "Johan Demaret Rivarola",
-      "statement": "Which country doesn\u0027t use Euro as currency ?",
+      "statement": "Which country doesn\u0027t use Euro as currencyÂ ?",
 	  "category": "BUSINESS",
       "choices": {
         "Sweden": true,
@@ -2497,7 +2497,7 @@
     },
     {
       "author": "Johan Demaret Rivarola",
-      "statement": "On the periodic table of elements what does \u0027C\u0027 stand for ?",
+      "statement": "On the periodic table of elements what does \u0027C\u0027 stand forÂ ?",
 	  "category": "SCIENCE_NATURE",
       "choices": {
         "Calcium": false,
@@ -2519,7 +2519,7 @@
     },
     {
       "author": "Johan Demaret Rivarola",
-      "statement": "What is the world\u0027s longest river ?",
+      "statement": "What is the world\u0027s longest riverÂ ?",
 	  "category": "GEOGRAPHY",
       "choices": {
         "Yangtze": false,
@@ -2530,7 +2530,7 @@
     },
     {
       "author": "Johan Demaret Rivarola",
-      "statement": "Which race isn\u0027t part of J.R.R. Tolkien\u0027s fictional fantasy world of Middle-earth ?",
+      "statement": "Which race isn\u0027t part of J.R.R. Tolkien\u0027s fictional fantasy world of Middle-earthÂ ?",
 	  "category": "ENTERTAINMENT",
       "choices": {
         "Elves": false,
@@ -2541,7 +2541,7 @@
     },
     {
       "author": "Johan Demaret Rivarola",
-      "statement": "When was the Universal Declaration of Human Rights adopted ?",
+      "statement": "When was the Universal Declaration of Human Rights adoptedÂ ?",
 	  "category": "HISTORY",
       "choices": {
         "1928": false,
@@ -2552,7 +2552,7 @@
     },
     {
       "author": "Johan Demaret Rivarola",
-      "statement": "Who is the CEO of Google ?",
+      "statement": "Who is the CEO of GoogleÂ ?",
 	  "category": "BUSINESS",
       "choices": {
         "Larry Page": true,
@@ -2574,7 +2574,7 @@
     },
     {
       "author": "Johan Demaret Rivarola",
-      "statement": "Who won the Wimbledon Championships in 2014 ?",
+      "statement": "Who won the Wimbledon Championships in 2014Â ?",
 	  "category": "SPORT_LEISURE",
       "choices": {
         "G. Dimitrov": false,
@@ -2585,7 +2585,7 @@
     },
     {
       "author": "Johan Demaret Rivarola",
-      "statement": "Which country doesn\u0027t border Brazil ?",
+      "statement": "Which country doesn\u0027t border BrazilÂ ?",
 	  "category": "GEOGRAPHY",
       "choices": {
         "Ecuador": true,
@@ -2596,7 +2596,7 @@
     },
     {
       "author": "Johan Demaret Rivarola",
-      "statement": "Who is the drummer of the rock band Muse ?",
+      "statement": "Who is the drummer of the rock band MuseÂ ?",
 	  "category": "ENTERTAINMENT",
       "choices": {
         "Alex Turner": false,
@@ -2607,7 +2607,7 @@
     },
     {
       "author": "Johan Demaret Rivarola",
-      "statement": "Who was the first king of Belgium ?",
+      "statement": "Who was the first king of BelgiumÂ ?",
 	  "category": "HISTORY",
       "choices": {
         "Baudouin I": false,
@@ -2629,7 +2629,7 @@
     },
     {
       "author": "Johan Demaret Rivarola",
-      "statement": "What is the study of beer and beer-making called ?",
+      "statement": "What is the study of beer and beer-making calledÂ ?",
 	  "category": "SCIENCE_NATURE",
       "choices": {
         "Acology": false,
@@ -2640,7 +2640,7 @@
     },
     {
       "author": "Johan Demaret Rivarola",
-      "statement": "Who won the Formula 1 world\u0027s driver championship in 2014 ?",
+      "statement": "Who won the Formula 1 world\u0027s driver championship in 2014Â ?",
 	  "category": "SPORT_LEISURE",
       "choices": {
         "Nico Rosberg": false,
@@ -2657,7 +2657,7 @@
         "Berne": true,
         "Lausanne": false,
         "Zurich": false,
-        "GenÃ¨ve": false
+        "GenÃƒÂ¨ve": false
       }
     },
     {
@@ -2688,7 +2688,7 @@
 	  "category": "BUSINESS",
       "choices": {
         "Abraham Maslow": true,
-        "Juan Antonio PÃ©rez LÃ³pez": false,
+        "Juan Antonio PÃƒÂ©rez LÃƒÂ³pez": false,
         "Jhon Curtis Gowan": false,
         "Thomas d\u0027Aquin": false
       }
@@ -2882,7 +2882,7 @@
     },
     {
       "author": "Jordan Druart",
-      "statement": "Who is the CEO of Apple ?",
+      "statement": "Who is the CEO of AppleÂ ?",
 	  "category": "BUSINESS",
       "choices": {
         "Tim Cook": true,
@@ -2893,7 +2893,7 @@
     },
     {
       "author": "Jordan Druart",
-      "statement": "Which color isn\u0027t a primary color ?",
+      "statement": "Which color isn\u0027t a primary colorÂ ?",
 	  "category": "SCIENCE_NATURE",
       "choices": {
         "Red": false,
@@ -2915,7 +2915,7 @@
     },
     {
       "author": "Jordan Druart",
-      "statement": "Which country has the largest area ?",
+      "statement": "Which country has the largest areaÂ ?",
 	  "category": "GEOGRAPHY",
       "choices": {
         "Canada": false,
@@ -2948,7 +2948,7 @@
     },
     {
       "author": "Jordan Druart",
-      "statement": "When the Great Depression started ?",
+      "statement": "When the Great Depression startedÂ ?",
 	  "category": "BUSINESS",
       "choices": {
         "1932": false,
@@ -2970,7 +2970,7 @@
     },
     {
       "author": "Jordan Druart",
-      "statement": "Who was the MVP in the last super bowl ?",
+      "statement": "Who was the MVP in the last super bowlÂ ?",
 	  "category": "SPORT_LEISURE",
       "choices": {
         "Joe Flacco": false,
@@ -2981,7 +2981,7 @@
     },
     {
       "author": "Jordan Druart",
-      "statement": "Where are the rainforests ?",
+      "statement": "Where are the rainforestsÂ ?",
 	  "category": "GEOGRAPHY",
       "choices": {
         "Asia": false,
@@ -2992,12 +2992,12 @@
     },
     {
       "author": "Jordan Druart",
-      "statement": "Who said «Yes we can» ?",
+      "statement": "Who said Â«Yes we canÂ» ?",
 	  "category": "HISTORY",
       "choices": {
         "Barack Obama": true,
         "John Fitzgerald Kennedy": false,
-        "George Walker Bush": false,
+        "GeorgeÂ WalkerÂ Bush": false,
         "Franklin roosevelt": false
       }
     },
@@ -3025,7 +3025,7 @@
     },
     {
       "author": "Jordan Druart",
-      "statement": "Which is a medical drug ?",
+      "statement": "Which is a medical drugÂ ?",
 	  "category": "SCIENCE_NATURE",
       "choices": {
         "GHB": false,
@@ -3751,7 +3751,7 @@
     },
     {
       "author": "Nathan",
-      "statement": "What nationality is François Englert, the 2013 Nobel Prize laureate in Physics?",
+      "statement": "What nationality is FranÃ§ois Englert, the 2013 Nobel Prize laureate in Physics?",
       "category": "SCIENCE_NATURE",
       "choices": {
         "French": false,
@@ -3850,7 +3850,7 @@
 	},
 	{
 	  "author":"Mauroit Jean-Baptiste",
-	  "statement": "Donald Duck’s nephews are called “Riri”,”Fifi” and…",
+	  "statement": "Donald DuckÂ’s nephews are called Â“RiriÂ”,Â”FifiÂ” andÂ…",
 	  "category":"ENTERTAINMENT",
 	  "choices": {
 	    "Kiki": false,
@@ -3916,7 +3916,7 @@
 	},
 	{
 	  "author":"Mauroit Jean-Baptiste",
-	  "statement": "When was  the company « THX » founded?",
+	  "statement": "When was  the company Â« THX Â» founded?",
 	  "category":"ENTERTAINMENT",
 	  "choices": {
 	    "1986": false,
@@ -3982,7 +3982,7 @@
 	},
 	{
 	  "author":"Mauroit Jean-Baptiste",
-	  "statement": "Who is the director of the « Titanic » film?",
+	  "statement": "Who is the director of the Â« Titanic Â» film?",
 	  "category":"ENTERTAINMENT",
 	  "choices": {
 	    "James Cameron": true,
@@ -3993,11 +3993,11 @@
 	},
 	{
 	  "author":"Mauroit Jean-Baptiste",
-	  "statement": "What is the name of Caesar’s famous son and his murderer?",
+	  "statement": "What is the name of CaesarÂ’s famous son and his murderer?",
 	  "category":"HISTORY",
 	  "choices": {
 	    "Brutus": true,
-		"Caïus": false,
+		"CaÃ¯us": false,
 		"Romulus": false,
 		"Augustus": false 
 		}
@@ -4018,10 +4018,10 @@
 	  "statement": "What is the fusion temperature of tin?",
 	  "category":"SCIENCE_NATURE",
 	  "choices": {
-	    "456 °C": false,
-		"1230 °C": false,
-		"232 °C": true,
-		"101 °C": false
+	    "456 Â°C": false,
+		"1230 Â°C": false,
+		"232 Â°C": true,
+		"101 Â°C": false
 		}
 	},
 	{
@@ -4030,7 +4030,7 @@
 	  "category":"SPORTS_LEISURE",
 	  "choices": {
 	    "Cristiano Ronaldo": false,
-		"Pelé": false,
+		"PelÃ©": false,
 		"Lionel Messi": true,
 		"Diego Maradona": false
 		}
@@ -4537,7 +4537,7 @@
             "choices": {
                 "Coca Cola": false,
                 "Ford": true,
-                "Kärcher": false,
+                "KÃ¤rcher": false,
                 "Levis": false
             }
         },
@@ -5075,7 +5075,7 @@
 	"category":"HISTORY",
 	"choices":{
 		"Albert I":false,
-		"Léopold I":true,
+		"LÃ©opold I":true,
 		"Philippe I":false,
 		"Baudouin I":false
 	}
@@ -5085,9 +5085,9 @@
 	"statement":"3. Who was the second King who abdicate in Belgium ?",
 	"category":"HISTORY",
 	"choices":{
-		"Léopold III":false,
+		"LÃ©opold III":false,
 		"Albert II":true,
-		"Léopold II":false,
+		"LÃ©opold II":false,
 		"Baudouin I":false
 	}
 },
@@ -5405,7 +5405,7 @@
 		"category":"SCIENCE_NATURE",
 		"choices":{
 			"Thomas Edison":true,
-			"André-Marie Ampère":false,
+			"AndrÃ©-Marie AmpÃ¨re":false,
 			"Joseph Swan":false,
 			"Isaac Newton":false
 		}
@@ -5668,10 +5668,10 @@
 		"statement":"What temperature does water boil at? ",
 		"category":"SCIENCE_NATURE",
 		"choices":{
-			"100 °C ":true,
-			"99  °C":false,
-			"110 °C":false,
-			"101 °C":false
+			"100 Â°C ":true,
+			"99  Â°C":false,
+			"110 Â°C":false,
+			"101 Â°C":false
 		}
 	},
 	{
@@ -5888,7 +5888,7 @@
 		"category":"GEOGRAPHY",
 		"choices":{
 			"Brasilia":true,
-			"São Paulo":false,
+			"SÃ£o Paulo":false,
 			"Porto Alegre":false,
 			"Rio de Janeiro":false
 		}

@@ -70,7 +70,8 @@ public class Window extends JFrame
 		this.setSize((int) taille.getWidth()/4, (int) taille.getWidth()/4);
 		this.setMinimumSize(new Dimension(1300,800));
 		this.setLocationRelativeTo(null);
-		son = new Audio("Music/Trivia.wav");
+		son = new Audio(getClass().getClassLoader().getResourceAsStream("music/trivia.wav"));
+
 		son.start();
 		
 		
@@ -346,12 +347,12 @@ public class Window extends JFrame
 				public void actionPerformed(ActionEvent e) {
 					if(isActiver() == true){
 						setActiver(false);
-						getSon().stop(); // on stoppe tout son
+						getSon().interrupt(); // on stoppe tout son
 					}
 					else
 					{
 						setActiver(true);
-						setSon(new Audio("Music/Trivia.wav")); // Je recr�e le son pour �viter un bug de thread
+						setSon(new Audio(getClass().getClassLoader().getResourceAsStream("music/trivia.wav"))); // Je recr�e le son pour �viter un bug de thread
 						getSon().start(); // on relance le son
 					}
 					

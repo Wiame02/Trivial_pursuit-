@@ -5,11 +5,10 @@ import java.util.List;
 import fr.unantes.sce.trivial.model.Category;
 import fr.unantes.sce.trivial.model.Gamer;
 import fr.unantes.sce.trivial.model.Piece;
-
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 
 public class PieceTest 
 {
@@ -17,17 +16,17 @@ public class PieceTest
 	private Piece piece;
 	private List<Category> cheese;
 
-	@BeforeClass
+	@BeforeAll
 	public static void setUpBeforeClass() throws Exception 
 	{
 	}
 
-	@AfterClass
+	@AfterAll
 	public static void tearDownAfterClass() throws Exception 
 	{
 	}
 
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception 
 	{
 		gamer = new Gamer(null,null,null,null, null, null);
@@ -35,7 +34,7 @@ public class PieceTest
 		cheese = (List<Category>)Explorateur.getField(piece,"cheese");
 	}
 
-	@After
+	@AfterEach
 	public void tearDown() throws Exception 
 	{
 		piece = null;

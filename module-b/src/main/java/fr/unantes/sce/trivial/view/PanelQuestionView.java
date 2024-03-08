@@ -176,7 +176,7 @@ public class PanelQuestionView extends JPanel implements ActionListener
 			//r�ponse correcte sur une case camembert
 			if(fenetre.isActiver()==true) // on joue le son si le son est activ�
 			{
-				son = new Audio("Music/Correct.wav");
+				son = new Audio(getClass().getClassLoader().getResourceAsStream("music/correct.wav"));
 				son.start();
 			}
 			if(Game.getInstance().getGameBoard().getSquareContainsPiece(Piece.getInstance()) instanceof SquareQuestionCheese)

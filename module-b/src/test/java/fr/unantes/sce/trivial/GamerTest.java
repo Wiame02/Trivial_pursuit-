@@ -1,26 +1,29 @@
 package fr.unantes.sce.trivial;
 
-import static org.junit.Assert.*;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import fr.unantes.sce.trivial.model.Gamer;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+
 
 import fr.unantes.sce.trivial.exception.BirthdayGamerException;
 import fr.unantes.sce.trivial.exception.EmailGamerException;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class GamerTest 
 {
 	Gamer gamer;
 	
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception 
 	{
 		gamer = new Gamer("toto01", "helha", "toto01@student.helha.be", "Reporter", "Tintin", "28/04/1998");
 	}
 
-	@After
+	@AfterEach
 	public void tearDown() throws Exception
 	{
 		gamer = null;

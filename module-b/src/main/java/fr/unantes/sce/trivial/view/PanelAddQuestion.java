@@ -231,7 +231,7 @@ public class PanelAddQuestion extends JPanel
 					stack.addQuestion(maQuestion);
 					
 					//sauvegarde du stack
-					Serialisation.saveStack("Data/question.json", stack);
+					Serialisation.saveStack("data/question.json", stack);
 					
 					
 					//TODO le tableau ne s'actualise pas quand on clique sur retour

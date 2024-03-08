@@ -52,11 +52,11 @@ public class FightGP extends GridPane {
 	public FightGP(Player playerSelected, int indiceCategory) {
 		//Mettre le css
 		this.setId("Fight");
-		this.getStylesheets().add("/ressources/css/fight.css");
+		this.getStylesheets().add("./css/fight.css");
 		
 		//Récupérer le joueur
 		if(playerSelected != null){this.playerSelected = playerSelected;}
-		else {this.playerSelected = new Player("Wouilliam", new Image("ressources/images/icons/Bulbasaur.png"));}
+		else {this.playerSelected = new Player("Wouilliam", new Image(getClass().getClassLoader().getResource("./images/icons/Bulbasaur.png").toString()));}
 		
 		//Récupérer le deck et une question au hasard en fonction de la catégorie de la case
 		getQuestionRand(indiceCategory);
@@ -259,7 +259,7 @@ public class FightGP extends GridPane {
 				badges.add(cat);
 			}
 			int indexOf = badges.indexOf(questionRand.getCategory()) + 1;
-			ivBadge = new ImageView(new Image("/ressources/images/badges/badge" + indexOf + ".png"));
+			ivBadge = new ImageView(new Image(getClass().getClassLoader().getResource("./images/badges/badge" + indexOf + ".png").toString()));
 			ivBadge.setFitHeight(40);
 			ivBadge.setFitWidth(40);
 		}
@@ -273,9 +273,15 @@ public class FightGP extends GridPane {
 	public ImageView getSprite() {
 		if(sprite == null) {
 			//Reprends uniquement le nom du gif dans l'url
+			System.out.println("## playerSelected: " + playerSelected);
+			System.out.println("##" + playerSelected.getIcon().getUrl());
+			System.out.println("## icon: " + playerSelected.getIcon());
+			Image icon = playerSelected.getIcon();
+			System.out.println(icon.getUrl());
+
 			String[] gifName = playerSelected.getIcon().getUrl().split("/");
 			String Name = gifName[gifName.length - 1].replace(".png", "");
-			sprite = new ImageView(new Image("ressources/images/sprites/" + Name + ".gif"));
+			sprite = new ImageView(new Image(getClass().getClassLoader().getResource("./images/sprites/" + Name + ".gif").toString()));
 			sprite.setFitHeight(200);
 			sprite.setFitWidth(200);
 		}
@@ -286,7 +292,7 @@ public class FightGP extends GridPane {
 	public ImageView getEnemySprite() {
 		if(enemySprite==null) {
 			String catName = questionRand.getCategory().toString();
-			enemySprite = new ImageView(new Image("ressources/images/enemySprites/" + catName + ".gif"));
+			enemySprite = new ImageView(new Image(getClass().getClassLoader().getResource("./images/enemySprites/" + catName + ".gif").toString()));
 			enemySprite.setFitHeight(270);
 			enemySprite.setFitWidth(270);
 		}
@@ -305,7 +311,7 @@ public class FightGP extends GridPane {
 	//Récupérer une question random dans le deck
 	public void getQuestionRand(int indiceCategory) {
 		Random rand = new Random();
-		this.deck = Persistance.read("src/ressources/datas/dataQuestion.json");
+		this.deck = Persistance.read("./data/dataQuestion.json");
 		
 		boolean isNotOk = true;
 		while(isNotOk)

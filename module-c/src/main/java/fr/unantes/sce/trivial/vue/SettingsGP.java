@@ -260,7 +260,7 @@ public class SettingsGP extends GridPane{
 	public void setCursor() {
 		Scene scene = StartGame.getStage().getScene();
 		if(!getCbCursor().getSelectionModel().getSelectedItem().equals(getCbCursor().getItems().get(0))) {
-			Image cursor = new Image("ressources/images/gameIcon/" + getCbCursor().getSelectionModel().getSelectedItem() + ".gif");
+			Image cursor = new Image(getClass().getClassLoader().getResource("./images/gameIcon/" + getCbCursor().getSelectionModel().getSelectedItem() + ".gif").toString());
 			scene.setCursor(new ImageCursor(cursor));
 		} else {scene.setCursor(null);}
 	}

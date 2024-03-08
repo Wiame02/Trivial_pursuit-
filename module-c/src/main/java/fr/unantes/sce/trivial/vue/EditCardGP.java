@@ -46,8 +46,8 @@ public class EditCardGP extends GridPane
 	public EditCardGP()
 	{
 		//Instanciation du deck
-		this.deck = Persistance.read("src/ressources/datas/dataQuestion.json");
-		this.deckWaiting = Persistance.read("src/ressources/datas/dataQuestion.json");
+		this.deck = Persistance.read("./data/dataQuestion.json");
+		this.deckWaiting = Persistance.read("./data/dataQuestion.json");
 		
 		//Affichage du grillage
 		fr.unantes.sce.trivial.vue.MainMenuGP.createLine(this, false);
@@ -236,9 +236,9 @@ public class EditCardGP extends GridPane
 			        
 			        //Vérifier la réponse de l'utilisateur
 			        if (result == ButtonType.OK) {
-			        	Persistance.write("src/ressources/datas/dataQuestion.json", deck);
-			        	this.deck = Persistance.read("src/ressources/datas/dataQuestion.json");
-			        	this.deckWaiting = Persistance.read("src/ressources/datas/dataQuestion.json");
+			        	Persistance.write("./dataQuestion.json", deck);
+			        	this.deck = Persistance.read("./dataQuestion.json");
+			        	this.deckWaiting = Persistance.read("./dataQuestion.json");
 			        }
 			        else {
 			        	setDeck(deckWaiting);

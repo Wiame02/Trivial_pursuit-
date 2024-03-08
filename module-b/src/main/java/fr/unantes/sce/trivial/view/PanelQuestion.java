@@ -114,7 +114,7 @@ class PanelButtons extends JPanel
 					{							
 					     stack.removeQuestion(rows[i]);
 					 }
-					Serialisation.saveStack("Data/question.json", stack);
+					Serialisation.saveStack("data/question.json", stack);
 					
 					
 					//fp.getPanelCartes().getPanelt().getModeleTableau().fireTableDataChanged(); //   Plus besoin gr�ce � l'observer

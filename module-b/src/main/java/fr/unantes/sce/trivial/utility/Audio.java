@@ -11,17 +11,16 @@ import javax.sound.sampled.*;
  
 public class Audio extends Thread{  
      
-    private String son;
+    private InputStream son;
     AudioInputStream audioInputStream = null;
     SourceDataLine line;
-    public Audio(String son)
+    public Audio(InputStream son)
     {
     	this.son=son;
     }
     public void run(){							// On redefinit run de la classe de thread
-        File fichier = new File(son);
         try {
-        AudioFileFormat format = AudioSystem.getAudioFileFormat(fichier);
+        AudioFileFormat format = AudioSystem.getAudioFileFormat(son);
         } catch (UnsupportedAudioFileException e1) {
             e1.printStackTrace();
         } catch (IOException e1) {
@@ -29,7 +28,7 @@ public class Audio extends Thread{
         }
          
         try {
-            audioInputStream = AudioSystem.getAudioInputStream(fichier);
+            audioInputStream = AudioSystem.getAudioInputStream(son);
         } catch (UnsupportedAudioFileException e) {
             e.printStackTrace();
         } catch (IOException e) {

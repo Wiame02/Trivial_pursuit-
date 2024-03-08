@@ -5,6 +5,10 @@ import fr.unantes.sce.trivial.model.Category;
 import fr.unantes.sce.trivial.model.IteratorQuestion;
 import fr.unantes.sce.trivial.model.Stack;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 public class mainTest {
 
 	public static void main(String[] args) {
@@ -80,10 +84,15 @@ public class mainTest {
 //	System.out.println(piece.getCheese());
 		
 
-	
-	Stack stack = Serialisation.retrieveStack("groupe07.json");
-	
-	System.out.println("coucou003\n"+stack.getListQuestion().get(0));
+	String fileName = "groupe07.json";
+        Stack stack = null;
+        try {
+            stack = Serialisation.retrieveStack(new FileInputStream(new File(fileName)));
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+        System.out.println("coucou003\n"+stack.getListQuestion().get(0));
 	
 	}
 

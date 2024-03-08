@@ -1,6 +1,7 @@
 package fr.unantes.sce.trivial;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.lang.reflect.Field;
 import java.util.List;
@@ -9,9 +10,9 @@ import fr.unantes.sce.trivial.model.Administrator;
 import fr.unantes.sce.trivial.model.Gamer;
 import fr.unantes.sce.trivial.model.ManageUsers;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class ManageUsersTest
 {
@@ -20,7 +21,7 @@ public class ManageUsersTest
 	ManageUsers manageUsers;
 	List<Gamer> users;
 
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception 
 	{
 		admin = Administrator.getInstance();
@@ -31,7 +32,7 @@ public class ManageUsersTest
 		users = (List<Gamer>)Explorateur.getField(manageUsers,"users");
 	}
 
-	@After
+	@AfterEach
 	public void tearDown() throws Exception 
 	{
 		// Les 3 instructions suivantes permettent de tester n'importe quel Singleton gr�ce � l'introspection.

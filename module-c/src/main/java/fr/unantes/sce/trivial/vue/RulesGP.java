@@ -46,7 +46,7 @@ public class RulesGP extends GridPane{
 		
 		for(Category cat : Category.values()) { 
 			//Création des nodes
-			ImageView badge = new ImageView(new Image("/ressources/images/badges/badge" + i + ".png"));
+			ImageView badge = new ImageView(new Image(getClass().getClassLoader().getResource("./images/badges/badge" + i + ".png").toString()));
 			Label categ = new Label(cat.toString());  
 			
 			//Réglage des ImageView

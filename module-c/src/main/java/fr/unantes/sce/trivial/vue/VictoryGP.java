@@ -19,7 +19,7 @@ public class VictoryGP extends GridPane {
 	public VictoryGP(Player player) {
 		//Mettre le css
 		this.setId("Victory");
-		this.getStylesheets().add("/ressources/css/victory.css");
+		this.getStylesheets().add("./css/victory.css");
 		
 		//Récupérer le joueur
 		this.p = player;

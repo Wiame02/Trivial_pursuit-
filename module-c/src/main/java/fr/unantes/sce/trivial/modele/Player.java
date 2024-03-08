@@ -2,6 +2,7 @@ package fr.unantes.sce.trivial.modele;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import fr.unantes.sce.trivial.enumeration.BonusType;
 import javafx.scene.image.Image;

@@ -23,7 +23,7 @@ public class EncodageQuestionGP extends GridPane
 	//Constructeur
 	public EncodageQuestionGP() {
 		fr.unantes.sce.trivial.vue.MainMenuGP.createLine(this, false);
-		this.getStylesheets().add("/ressources/css/encodage.css");
+		this.getStylesheets().add("./css/encodage.css");
 		
 		//Ajouts des éléments
 		this.add(getLblCategory(), 30, 30, 20, 10);

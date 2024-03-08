@@ -1,23 +1,22 @@
 package fr.unantes.sce.trivial;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Calendar;
 import java.util.List;
 
 import fr.unantes.sce.trivial.model.Game;
 import fr.unantes.sce.trivial.model.Piece;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class GameTest
 {
 	private Game game;
 	private List<Piece> listGamers;
 	private Piece p;
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception 
 	{
 		game = Game.getInstance();
@@ -25,7 +24,7 @@ public class GameTest
 		p = Piece.getInstance();
 	}
 
-	@After
+	@AfterEach
 	public void tearDown() throws Exception 
 	{
 		// Les 3 instructions suivantes permettent de tester n'importe quel Singleton gr�ce � l'introspection.

@@ -1,26 +1,29 @@
 package fr.unantes.sce.trivial;
 
-import static org.junit.Assert.*;
+
 
 import java.lang.reflect.Field;
 
 import fr.unantes.sce.trivial.model.Dice;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class DiceTest 
 {
 	Dice dice;
 	
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception
 	{
 		dice = Dice.getInstance();
 	}
 	
-	@After
+	@AfterEach
 	public void tearDown() throws Exception
 	{
 		// Les 3 instructions suivantes permettent de tester n'importe quel Singleton gr�ce � l'introspection.

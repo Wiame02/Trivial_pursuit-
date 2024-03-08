@@ -43,7 +43,7 @@ public class MenuGP extends GridPane
 	}
 	public static ImageView getTitle() {
 		if(title == null) {
-			Image image = new Image("/ressources/images/backgrounds/title.png");
+			Image image = new Image(MenuGP.class.getClassLoader().getResource("./images/backgrounds/title.png").toString());
 			title = new ImageView();
 			title.setFitHeight(500);
 			title.setFitWidth(800);
@@ -57,7 +57,7 @@ public class MenuGP extends GridPane
 			btnPlay.setOnAction((ActionEvent event) -> {
 				MainMenuGP mmgp = (MainMenuGP) MenuGP.this.getParent().getParent();
 				mmgp.setRoot(3);});
-			Font customFont = Font.loadFont(getClass().getResourceAsStream("/ressources/fonts/PressStart2P-Regular.ttf"), 12);
+			Font customFont = Font.loadFont(getClass().getResourceAsStream("./fonts/PressStart2P-Regular.ttf"), 12);
 			btnPlay.setFont(customFont);
 		}
 		return btnPlay;

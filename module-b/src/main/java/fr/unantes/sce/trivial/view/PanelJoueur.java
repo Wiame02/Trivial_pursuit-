@@ -34,8 +34,6 @@ import fr.unantes.sce.trivial.model.Gamer;
 import fr.unantes.sce.trivial.model.ManageUsers;
 import fr.unantes.sce.trivial.utility.Serialisation;
 import fr.unantes.sce.trivial.utility.SpringUtilities;
-import fr.unantes.sce.trivial.model.*;
-import fr.unantes.sce.trivial.exception.*;
 
 public class PanelJoueur extends JPanel
 {
@@ -104,7 +102,7 @@ public class PanelJoueur extends JPanel
 	public ManageUsers getListUsers() 
 	{
 		if(listUsers == null)
-			listUsers = Serialisation.retrieveManageUsers(new File("Data/sauve.XML"));
+			listUsers = Serialisation.retrieveManageUsers(getClass().getClassLoader().getResourceAsStream("data/sauve.XML"));
 		return listUsers;
 	}
 
@@ -192,7 +190,7 @@ class PanelButton extends JPanel implements ActionListener
 			pj.getListUsers().addGamer(player);
 			
 			// on enregistre cette liste
-			Serialisation.saveManageUsers(pj.getListUsers(), new File("Data/sauve.XML")); 
+			Serialisation.saveManageUsers(pj.getListUsers(), new File("data/sauve.XML"));
 			
 			
 			//ensuite on affiche le panneau de jeu

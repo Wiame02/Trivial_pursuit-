@@ -1,13 +1,6 @@
 package fr.unantes.sce.trivial.utility;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.FileOutputStream;
+import java.io.*;
 
 import fr.unantes.sce.trivial.model.ManageUsers;
 import fr.unantes.sce.trivial.model.Stack;
@@ -47,20 +40,17 @@ public class Serialisation
 			 
 	}
 	
-	public static Stack retrieveStack(String nomFichier){
+	public static Stack retrieveStack(InputStream nomFichier){
 		
 		Gson gson = new Gson();
 		Stack stack = null;
 		BufferedReader br = null;
 		
 		try {
-			 br = new BufferedReader(new FileReader(nomFichier));
+			 br = new BufferedReader(new InputStreamReader(nomFichier));
 			stack = gson.fromJson(br, Stack.class);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-		
-		finally{
+
+		} finally{
 			
 			if(br!=null){
 				try {
@@ -98,7 +88,7 @@ public class Serialisation
 		}	
 	}
 	
-	public static ManageUsers retrieveManageUsers(File file)
+	public static ManageUsers retrieveManageUsers(InputStream is)
 	{
 		XStream xStream = null;
 		FileInputStream in = null;
@@ -108,16 +98,12 @@ public class Serialisation
 		try {
 			xStream = new XStream(new DomDriver());
 			xStream.allowTypesByWildcard(new String[]{"fr.unantes.sce.trivial.model.**"});
-			in = new FileInputStream(file);
-			tmp = xStream.fromXML(in);
+			//in = new FileInputStream(file);
+			tmp = xStream.fromXML(is);
 			if(tmp instanceof ManageUsers){
 				manageUsers = (ManageUsers) tmp;
 			}
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		finally{
+		} finally{
 			if(in!=null){
 				try {
 					in.close();

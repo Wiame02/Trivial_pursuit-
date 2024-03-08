@@ -1,15 +1,16 @@
 package fr.unantes.sce.trivial;
 
-import static org.junit.Assert.*;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.HashMap;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
 import fr.unantes.sce.trivial.model.Category;
 import fr.unantes.sce.trivial.model.Question;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class QuestionTest {
 	private HashMap<String,Boolean>choices;
@@ -19,7 +20,7 @@ public class QuestionTest {
 	private String answer3;
 	private String answer4;
 	
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception 
 	{
 		quest = new Question("Rochez Adrien","What is the capital city of Russia?",Category.GEOGRAPHY);
@@ -30,7 +31,7 @@ public class QuestionTest {
 		answer4 = "Saint Petersburg";
 	}
 
-	@After
+	@AfterEach
 	public void tearDown() throws Exception 
 	{
 		quest = null;

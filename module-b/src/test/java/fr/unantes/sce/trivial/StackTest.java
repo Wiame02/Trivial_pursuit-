@@ -1,18 +1,21 @@
 package fr.unantes.sce.trivial;
 
-import static org.junit.Assert.*;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+
 
 import fr.unantes.sce.trivial.model.Category;
 import fr.unantes.sce.trivial.model.Question;
 import fr.unantes.sce.trivial.model.Stack;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 
 public class StackTest 
@@ -21,7 +24,7 @@ public class StackTest
 	private Question q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18;
 	private List<Question> listQuestion;
 	
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception
 	{
 		stack = Stack.getInstance();
@@ -47,7 +50,7 @@ public class StackTest
 		q18=new Question("Decroos Christophe","What is the nationality of stanislas wawrinka ?",Category.SPORT_LEISURE);
 	}
 
-	@After
+	@AfterEach
 	public void tearDown() throws Exception 
 	{
 		q1=null;q2=null;q3=null;q4=null;q5=null;q6=null;q7=null;q8=null;q9=null;

@@ -1,13 +1,6 @@
 package fr.unantes.sce.trivial.modele;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -35,7 +28,7 @@ public class Persistance
 		 try
 		 {
 			 //Initialisation du fichier
-			 File f = new File("src/ressources/datas/dataQuestion.json");
+			 File f = new File("./dataQuestion.json");
 			 
 			 //Écriture des données sous format GSON
 			 PrintWriter PW = new PrintWriter(new BufferedWriter(new FileWriter(file)));
@@ -60,12 +53,13 @@ public class Persistance
         Deck instance;
         //"src/ressources/datas/dataQuestion.json"
         File f = new File(file);
+		InputStreamReader reader = new InputStreamReader(Persistance.class.getClassLoader().getResourceAsStream(file));
 
         //Try-Catch pour lire le fichier et le convertir au format GSON
         try
         {
         	//Ouverture de la lecture
-        	BufferedReader FR = new BufferedReader(new FileReader(f));
+        	BufferedReader FR = new BufferedReader(reader);
         	
         	//Déclaration & Initialisation de la première ligne
         	String line = null;

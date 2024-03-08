@@ -1,6 +1,7 @@
 package fr.unantes.sce.trivial;
 
-import static org.junit.Assert.*;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,13 +11,13 @@ import fr.unantes.sce.trivial.model.Category;
 import fr.unantes.sce.trivial.model.IteratorQuestion;
 import fr.unantes.sce.trivial.model.Question;
 
-import org.junit.After;
-import org.junit.Before;
 
-import org.junit.Test;
 
 import fr.unantes.sce.trivial.exception.IndexNegativeException;
 import fr.unantes.sce.trivial.exception.IndexTooHighException;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 // TODO Peut �tre � compl�ter avec l'introspection...
 public class IteratorQuestionTest 
@@ -25,7 +26,7 @@ public class IteratorQuestionTest
 	private List<Question> list;
 	
 	
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception 
 	{
 		List<Question> listQ = new ArrayList<Question>();
@@ -53,7 +54,7 @@ public class IteratorQuestionTest
 		list=(List<Question>)Explorateur.getField(it,"list");
 	}
 
-	@After
+	@AfterEach
 	public void tearDown() throws Exception 
 	{
 		it = null;

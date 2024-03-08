@@ -22,3 +22,6 @@ buildNumber.properties
 .vscode/
 .history/
 *.vsix
+
+## Java Configuration Files
+.tool-versions

@@ -122,7 +122,7 @@ public class BoardGP extends GridPane
 		
 		//Ajouter les cases au plateau
 		for(int i=0;i<+ listeInt.length;i++) {
-			ImageView badge = new ImageView(new Image("/ressources/images/badges/badge" + listeInt[i][2] + ".png"));
+			ImageView badge = new ImageView(new Image(getClass().getClassLoader().getResource("./images/badges/badge" + listeInt[i][2] + ".png").toString()));
 			badge.setFitWidth(35); badge.setFitHeight(35);
 			
 			StackPane badgeBox = new StackPane(badge);
@@ -323,7 +323,7 @@ public class BoardGP extends GridPane
 			            	
 			            	//Changement de la valeur du dé & de l'image de celui-ci
 	                    	dice = random.nextInt(DICE_VALUE) + 1;
-	                    	getDiceImage().setImage(new Image("/ressources/images/dice/dice" + dice + ".jpg"));
+	                    	getDiceImage().setImage(new Image(getClass().getClassLoader().getResource("./images/dice/dice" + dice + ".jpg").toString()));
 			            }
 			        };
 			        EventHandler<ActionEvent> moveEH = new EventHandler<ActionEvent>() {
@@ -599,7 +599,7 @@ public class BoardGP extends GridPane
 					badges.add(cat);
 				}
 				int indexOf = badges.indexOf(Category.valueOf(badge.toUpperCase())) + 1;
-				ImageView Ivbadge = new ImageView(new Image("/ressources/images/badges/badge" + indexOf + ".png"));
+				ImageView Ivbadge = new ImageView(new Image(getClass().getClassLoader().getResource("./images/badges/badge" + indexOf + ".png").toString()));
 				Ivbadge.setSmooth(true);
 				Ivbadge.setCache(true);
 				Ivbadge.setScaleX(1);

@@ -1,0 +1,4 @@
+Listez ici les _mauvaises odeurs_ que vous avez détecté dans le code source{nbsp}:
+
+.  `A::foo()` - Méthode trop longue
+. `B` - Classe trop grande

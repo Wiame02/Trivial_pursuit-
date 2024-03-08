@@ -44,7 +44,7 @@ public class PanelLogin extends JPanel
 	public ManageUsers getListUsers() 
 	{
 		if(listUsers == null)
-			listUsers = Serialisation.retrieveManageUsers(new File("Data/sauve.XML"));
+			listUsers = Serialisation.retrieveManageUsers(getClass().getClassLoader().getResourceAsStream("data/sauve.XML"));
 		return listUsers;
 	}
 	

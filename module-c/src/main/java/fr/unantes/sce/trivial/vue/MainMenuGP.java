@@ -1,5 +1,7 @@
 package fr.unantes.sce.trivial.vue;
 
+import java.io.InputStream;
+import java.net.URL;
 import java.nio.file.Paths;
 import java.util.List;
 
@@ -83,7 +85,7 @@ public class MainMenuGP extends BorderPane
 	public MenuGP getMenu() {
 		if(menu == null) {
 			menu = new MenuGP();
-			menu.getStylesheets().add("/ressources/css/menu.css");
+			menu.getStylesheets().add("./css/menu.css");
 			menu.setId("Menu");
 		}
 		return menu;
@@ -91,7 +93,7 @@ public class MainMenuGP extends BorderPane
 	public EditCardGP getEditcard() {
 		if(editcard == null) {
 			editcard = new EditCardGP();
-			editcard.getStylesheets().add("/ressources/css/editcard.css");
+			editcard.getStylesheets().add("./css/editcard.css");
 			editcard.setId("EditCard");
 		}
 		return editcard;
@@ -99,7 +101,7 @@ public class MainMenuGP extends BorderPane
 	public LoginGP getLogin() {
 		if(login == null) {
 			login = new LoginGP();
-			login.getStylesheets().add("/ressources/css/login.css");
+			login.getStylesheets().add("./css/login.css");
 			login.setId("Login");
 		}
 		return login;
@@ -107,7 +109,8 @@ public class MainMenuGP extends BorderPane
 	public SettingsGP getSettings() {
 		if(settings == null) {
 			settings = new SettingsGP();
-			settings.getStylesheets().add("/ressources/css/settings.css");
+			URL url = this.getClass().getClassLoader().getResource("./css/settings.css");
+			settings.getStylesheets().add(url.toString());
 			settings.setId("Settings");
 		}
 		return settings;
@@ -115,7 +118,8 @@ public class MainMenuGP extends BorderPane
 	public RulesGP getRules() {
 		if(rules == null) {
 			rules = new RulesGP();
-			rules.getStylesheets().add("/ressources/css/rules.css");
+			URL url = this.getClass().getClassLoader().getResource("./css/rules.css");
+			rules.getStylesheets().add(url.toString());
 			rules.setId("Rules");
 		}
 		return rules;
@@ -123,7 +127,7 @@ public class MainMenuGP extends BorderPane
 	public CreatePlayerGP getCreatePlayerGP() {
 		if(createplayer == null) {
 			createplayer = new CreatePlayerGP();
-			createplayer.getStylesheets().add("/ressources/css/createplayer.css");
+			createplayer.getStylesheets().add("./css/createplayer.css");
 			createplayer.setId("CreatePlayerP2");
 		}
 		return createplayer;
@@ -131,7 +135,7 @@ public class MainMenuGP extends BorderPane
 	public BoardGP getBoard(List<Player> players) {
 		if(board == null) {
 			board = new BoardGP(players);
-			board.getStylesheets().add("/ressources/css/board.css");
+			board.getStylesheets().add("./css/board.css");
 			board.setId("Board");
 		}
 		return board;
@@ -141,13 +145,13 @@ public class MainMenuGP extends BorderPane
 	}
 	public FightGP getFight(Player playerSelected, int indiceCategory) {
 		fight = new FightGP(playerSelected, indiceCategory);
-		fight.getStylesheets().add("/ressources/css/fight.css");
+		fight.getStylesheets().add("./css/fight.css");
 		fight.setId("Fight");
 		return fight;
 	}
 	public EncodageQuestionGP getEncodage() {
 		encodage = new EncodageQuestionGP();
-		encodage.getStylesheets().add("/ressources/css/encodage.css");
+		encodage.getStylesheets().add("./css/encodage.css");
 		encodage.setId("Encodage");
 		
 		return encodage;
@@ -171,16 +175,19 @@ public class MainMenuGP extends BorderPane
 	
 	//Méthodes utiles
 	public void music(int volume) {
-		String music = "src/ressources/sounds/musics/MainMusic.mp3";
-		Media media = new Media(Paths.get(music).toUri().toString());
+		InputStream is = getClass().getClassLoader().getResourceAsStream("./sounds/musics/MainMusic.mp3");
+		String music = "./sounds/musics/MainMusic.mp3";
+		URL url = getClass().getClassLoader().getResource(music);
+		Media media = new Media(url.toString());
 		mainMusic = new MediaPlayer(media);
 		mainMusic.setVolume(volume * 0.01);
 		mainMusic.play();
 		mainMusic.setOnEndOfMedia(new Runnable() {public void run() {mainMusic.seek(Duration.ZERO);}});
 	}
 	public void click(int volume) {
-		String music = "src/ressources/sounds/effects/Click.mp3";
-		Media media = new Media(Paths.get(music).toUri().toString());
+		String music = "./sounds/effects/Click.mp3";
+		URL url = getClass().getClassLoader().getResource(music);
+		Media media = new Media(url.toString());
 		click = new MediaPlayer(media);
 		click.setVolume(volume * 0.01);
 		click.play();
